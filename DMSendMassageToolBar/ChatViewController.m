@@ -38,7 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
     
     /**
      *  聊天tableview
@@ -91,6 +91,10 @@
     self.ChatTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 50)];
     self.ChatTableView.tableFooterView = [[UIView alloc]init];
     [self.view addSubview:self.ChatTableView];
+    
+    self.ChatTableView.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1.0];
+    self.ChatTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.ChatTableView.allowsSelection = NO; // 不允许选中
     
     self.ChatTableView.dataSource = self;
     self.ChatTableView.delegate = self;
