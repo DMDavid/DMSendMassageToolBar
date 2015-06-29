@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class MessageFrame;
 @interface ChatTableViewCell : UITableViewCell
 
 
-
 +(instancetype)cellWithTableView:(UITableView *)tableView;
+
+@property (nonatomic, strong) MessageFrame *messageFrame;
 
 
 @end

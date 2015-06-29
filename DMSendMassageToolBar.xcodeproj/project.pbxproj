@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E216013D1B34003E00CD28BA /* DMSendMassageToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E216013C1B34003E00CD28BA /* DMSendMassageToolBar.m */; };
+		E21D6D181B41281500EC65B0 /* MessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D6D171B41281500EC65B0 /* MessageFrame.m */; };
+		E21D6D1B1B41289200EC65B0 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D6D1A1B41289200EC65B0 /* Message.m */; };
+		E21D6D1D1B412C5A00EC65B0 /* chat_me.png in Resources */ = {isa = PBXBuildFile; fileRef = E21D6D1C1B412C5A00EC65B0 /* chat_me.png */; };
+		E21D6D221B413E8E00EC65B0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D6D1F1B413E8E00EC65B0 /* UIImage+Extension.m */; };
+		E21D6D231B413E8E00EC65B0 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D6D211B413E8E00EC65B0 /* NSString+Extension.m */; };
 		E2653A011B3157F700A23CC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2653A001B3157F700A23CC3 /* main.m */; };
 		E2653A041B3157F700A23CC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2653A031B3157F700A23CC3 /* AppDelegate.m */; };
 		E2653A071B3157F700A23CC3 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2653A061B3157F700A23CC3 /* ChatViewController.m */; };
@@ -32,6 +37,15 @@
 /* Begin PBXFileReference section */
 		E216013B1B34003E00CD28BA /* DMSendMassageToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSendMassageToolBar.h; sourceTree = "<group>"; };
 		E216013C1B34003E00CD28BA /* DMSendMassageToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSendMassageToolBar.m; sourceTree = "<group>"; };
+		E21D6D161B41281500EC65B0 /* MessageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFrame.h; sourceTree = "<group>"; };
+		E21D6D171B41281500EC65B0 /* MessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFrame.m; sourceTree = "<group>"; };
+		E21D6D191B41289200EC65B0 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		E21D6D1A1B41289200EC65B0 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		E21D6D1C1B412C5A00EC65B0 /* chat_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_me.png; sourceTree = "<group>"; };
+		E21D6D1E1B413E8E00EC65B0 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		E21D6D1F1B413E8E00EC65B0 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		E21D6D201B413E8E00EC65B0 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		E21D6D211B413E8E00EC65B0 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		E26539FB1B3157F700A23CC3 /* DMSendMassageToolBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMSendMassageToolBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26539FF1B3157F700A23CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2653A001B3157F700A23CC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +93,17 @@
 			path = DMSendMassageToolBar;
 			sourceTree = "<group>";
 		};
+		E21D6D241B413F3D00EC65B0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E21D6D1E1B413E8E00EC65B0 /* UIImage+Extension.h */,
+				E21D6D1F1B413E8E00EC65B0 /* UIImage+Extension.m */,
+				E21D6D201B413E8E00EC65B0 /* NSString+Extension.h */,
+				E21D6D211B413E8E00EC65B0 /* NSString+Extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		E26539F21B3157F700A23CC3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,12 @@
 				E2653A061B3157F700A23CC3 /* ChatViewController.m */,
 				E2B08C9F1B40EAE600DCD4B4 /* ChatTableViewCell.h */,
 				E2B08CA01B40EAE700DCD4B4 /* ChatTableViewCell.m */,
+				E21D6D161B41281500EC65B0 /* MessageFrame.h */,
+				E21D6D171B41281500EC65B0 /* MessageFrame.m */,
+				E21D6D191B41289200EC65B0 /* Message.h */,
+				E21D6D1A1B41289200EC65B0 /* Message.m */,
+				E21D6D1C1B412C5A00EC65B0 /* chat_me.png */,
+				E21D6D241B413F3D00EC65B0 /* Category */,
 				E2653A0B1B3157F700A23CC3 /* Images.xcassets */,
 				E2653A0D1B3157F700A23CC3 /* LaunchScreen.xib */,
 				E26539FE1B3157F700A23CC3 /* Supporting Files */,
@@ -220,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21D6D1D1B412C5A00EC65B0 /* chat_me.png in Resources */,
 				E2653A0F1B3157F700A23CC3 /* LaunchScreen.xib in Resources */,
 				E2653A0C1B3157F700A23CC3 /* Images.xcassets in Resources */,
 				E2B08C9D1B40E77100DCD4B4 /* emoji.png in Resources */,
@@ -244,8 +276,12 @@
 				E2653A071B3157F700A23CC3 /* ChatViewController.m in Sources */,
 				E2653A041B3157F700A23CC3 /* AppDelegate.m in Sources */,
 				E2B08CA11B40EAE700DCD4B4 /* ChatTableViewCell.m in Sources */,
+				E21D6D1B1B41289200EC65B0 /* Message.m in Sources */,
 				E216013D1B34003E00CD28BA /* DMSendMassageToolBar.m in Sources */,
 				E2653A011B3157F700A23CC3 /* main.m in Sources */,
+				E21D6D181B41281500EC65B0 /* MessageFrame.m in Sources */,
+				E21D6D231B413E8E00EC65B0 /* NSString+Extension.m in Sources */,
+				E21D6D221B413E8E00EC65B0 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

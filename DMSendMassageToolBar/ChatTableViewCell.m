@@ -6,7 +6,16 @@
 //  Copyright (c) 2015年 杜蒙. All rights reserved.
 //
 
+
+
 #import "ChatTableViewCell.h"
+#import "MessageFrame.h"
+#import "Message.h"
+#import "UIImage+Extension.h"
+
+@interface ChatTableViewCell()
+@property (nonatomic,weak)UIButton *textView;
+@end
 
 @implementation ChatTableViewCell
 
@@ -27,25 +36,34 @@
     if (self) {
         self.selectedBackgroundView = [[UIView alloc]init];
         
+    
+        // 正文
+        UIButton *textView = [[UIButton alloc] init];
+        textView.titleLabel.numberOfLines = 0; // 自动换行
+        textView.titleLabel.font = textFont;
+        textView.contentEdgeInsets = UIEdgeInsetsMake(TextPadding, TextPadding, TextPadding, TextPadding);
+        [textView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.contentView addSubview:textView];
+        self.textView = textView;
         
-        [self setupUI];
-        
+        //设置cell的背景色
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
 
-
-- (void)setupUI
+- (void)setMessageFrame:(MessageFrame *)messageFrame
 {
+    _messageFrame = messageFrame;
+    Message *message =  messageFrame.message;
     
+    [self.textView setTitle:message.text forState:UIControlStateNormal];
+    self.textView.frame = messageFrame.textF;
+    [self.textView setBackgroundImage:[UIImage resizableImage:@"chat_me"] forState:UIControlStateNormal];
     
 }
 
-- (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxSize:(CGSize)maxSize
-{
-    NSDictionary *attrs = @{NSFontAttributeName:font};
-    return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
-}
+
 
 
 
