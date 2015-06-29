@@ -19,6 +19,13 @@
 
 @interface DMSendMassageToolBar : UIView
 
+/**
+ *  初始化控件
+ *
+ *  @param frame 控件frame
+ *
+ *  @return 控件
+ */
 - (instancetype)initWithToolBarFrame:(CGRect)frame;
 /**
  *  表情按钮

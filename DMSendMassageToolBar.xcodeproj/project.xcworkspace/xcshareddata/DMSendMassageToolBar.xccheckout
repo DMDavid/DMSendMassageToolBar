@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>804D092B-7C3C-47EC-BFCC-35D1DBB08AAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DMSendMassageToolBar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C9916BA90EF87D36451C080F03237B6C1F56B198</key>
+		<string>https://github.com/DMDavid/DMSendMassageToolBar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DMSendMassageToolBar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C9916BA90EF87D36451C080F03237B6C1F56B198</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DMDavid/DMSendMassageToolBar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C9916BA90EF87D36451C080F03237B6C1F56B198</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C9916BA90EF87D36451C080F03237B6C1F56B198</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DMSendMassageToolBar</string>
+		</dict>
+	</array>
+</dict>
+</plist>

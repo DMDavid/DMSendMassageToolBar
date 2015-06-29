@@ -29,11 +29,14 @@
     return _dataArray;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
     
     /**
      *  聊天tableview
@@ -68,9 +71,8 @@
 - (void)sendMessage:(NSString *)content{
     NSLog(@"%@",content);
     [self.dataArray addObject:content];
-//    NSIndexPath *index=[NSIndexPath indexPathForRow:self.dataArray.count -1 inSection:0];
-//    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:index,nil] withRowAnimation:UITableViewRowAnimationMiddle];
-    [self.ChatTableView reloadData];
+    NSIndexPath *index=[NSIndexPath indexPathForRow:self.dataArray.count-1  inSection:0];
+    [self.ChatTableView insertRowsAtIndexPaths:[NSArray arrayWithObjects:index,nil]  withRowAnimation:UITableViewRowAnimationFade];
 }
 
 //- (void)chooseEmoji:(UIImage *)image EmojiText:(NSString *)emojiText

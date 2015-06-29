@@ -127,7 +127,7 @@
 }
 
 //释放通知
--(void)delete:(id)sender{
+- (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
