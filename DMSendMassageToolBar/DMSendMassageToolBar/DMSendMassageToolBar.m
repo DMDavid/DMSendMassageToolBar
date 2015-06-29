@@ -197,8 +197,6 @@
     self.textView.text = @"";
     [self.textView resignFirstResponder];
     self.frame = self.textViewDefaultFrame;
-    
-    
 }
 
 /**
